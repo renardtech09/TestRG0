@@ -607,13 +607,13 @@ footer .div2 .e1{
     display: flex;
     justify-content: center;
 }
-footer .div2 .e1 a{
+footer .div2 .e1 a i{
     margin: 5px;
     padding: 5px 10px;
     background: black;
     border-radius: 4px;
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
 }
 footer .div2 .e1 a:hover{
     background: #fff;
