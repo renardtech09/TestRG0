@@ -214,14 +214,12 @@ main .div1 .container a span{
     padding: 0 10px 0 0;
 }
 main .others{
+    padding: 7px;
     width: 85%;
     background: #ccc;
     border-radius: 5px;
     color: black;
     font-family: 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 5px;
 }
 main .others a{
@@ -243,7 +241,7 @@ footer{
     height: 200px;
     background: #ccc;
     border-radius: 0 0 10px 10px;
-    display: flex;
+    display: none;
     align-items: start;
     justify-content: center;
     gap: 5px;
