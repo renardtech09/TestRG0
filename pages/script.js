@@ -151,7 +151,7 @@ document.getElementById('send').addEventListener('click', function() {
     document.body.removeChild(tempTextArea);
 
     // Afficher un message de confirmation
-    alert("Le lien vers votre panier a été copié dans le presse-papiers. Veuillez le partager avec l'administrateur via WhatsApp.");
+    alert("Lien vers votre panier copié avec succès dans le presse-papiers. Veuillez le partager avec l'administrateur via WhatsApp.");
 });
 
 // Appel de la fonction pour générer le lien vers le panier avec les sélections de l'utilisateur
