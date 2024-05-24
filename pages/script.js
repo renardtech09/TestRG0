@@ -114,7 +114,7 @@ document.getElementById('clear').addEventListener('click', function() {
 });
 function genererLienPanierUtilisateur() {
     // Générer le lien vers le panier avec les sélections de l'utilisateur
-    var lienVersPanier = "https://votresite.com/monpanier.html";
+    var lienVersPanier = "https://renardtech09.github.io/TestRG0/pages/page2.html";
 
     // Récupérer les sélections de l'utilisateur depuis le localStorage
     var selectionsUtilisateur = [];
@@ -132,6 +132,27 @@ function genererLienPanierUtilisateur() {
 
     return lienVersPanier;
 }
+
+// Associer la fonction de copie au bouton "Partager le panier via WhatsApp"
+document.getElementById('send').addEventListener('click', function() {
+    // Générer le lien vers le panier de l'utilisateur
+    var lienPanierUtilisateur = genererLienPanierUtilisateur();
+
+    // Créer un élément de texte temporaire pour copier le lien dans le presse-papiers
+    var tempTextArea = document.createElement('textarea');
+    tempTextArea.value = lienPanierUtilisateur;
+    document.body.appendChild(tempTextArea);
+    
+    // Copier le contenu du textarea dans le presse-papiers
+    tempTextArea.select();
+    document.execCommand('copy');
+    
+    // Retirer l'élément de texte temporaire
+    document.body.removeChild(tempTextArea);
+
+    // Afficher un message de confirmation
+    alert("Le lien vers votre panier a été copié dans le presse-papiers. Veuillez le partager avec l'administrateur via WhatsApp.");
+});
 
 // Appel de la fonction pour générer le lien vers le panier avec les sélections de l'utilisateur
 var lienPanierUtilisateur = genererLienPanierUtilisateur();
