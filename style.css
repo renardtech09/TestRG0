@@ -554,7 +554,7 @@ footer{
     height: 200px;
     background: #ccc;
     border-radius: 0 0 10px 10px;
-    display: flex;
+    display: none;
     align-items: start;
     justify-content: center;
     gap: 5px;
